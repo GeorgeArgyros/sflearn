@@ -9,8 +9,7 @@ to convert the infered models into BEK programs (see the [BEK
 tutorial](www.rise4fun.com/Bek/tutorial)).
 
 The primary target of these algorithms are the inference of string manipulating
-programs such as HTML encoders/decoders and filters used to sanitize untrusted
-user input.
+programs such as HTML encoders used to sanitize untrusted user input.
 
 For more details, see the paper:
 
