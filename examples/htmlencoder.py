@@ -13,6 +13,9 @@ import random
 import string
 from cgi import escape
 
+# Importing from ./context.py is performed to avoid assumptions on the location
+# of the library on the system. If library is installed then `import sflearn`
+# can be used.
 from context import BekProgram, MealyMachineLearner
 
 class EncoderLearner(MealyMachineLearner):

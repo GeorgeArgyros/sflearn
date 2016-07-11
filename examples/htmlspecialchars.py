@@ -12,6 +12,9 @@ import argparse
 import random
 import subprocess
 
+# Importing from ./context.py is performed to avoid assumptions on the location
+# of the library on the system. If library is installed then `import sflearn`
+# can be used.
 from context import BekProgram, TransducerLearner
 
 PHP_INPUT_FILE = 'input.pipe.txt'

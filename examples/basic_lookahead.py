@@ -9,6 +9,10 @@ For details on the inference algorithm see the paper
 import argparse
 import random
 
+
+# Importing from ./context.py is performed to avoid assumptions on the location
+# of the library on the system. If library is installed then `import sflearn`
+# can be used.
 from context import Transducer, TransducerLearner, BekProgram
 
 class BasicLookaheadLearner(TransducerLearner):
