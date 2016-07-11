@@ -13,21 +13,25 @@ programs such as HTML encoders/decoders and filters used to sanitize untrusted
 user input.
 
 For more details, see the paper:
+
 **Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**
-    _George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
+
+_George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
 
 
 ## Requirements
 
+There are no external dependencies.
 
 ## Installation
+
 
 
 ## Usage
 
 In order to use this library one should inherit one of the learning algorithm
-classes, either MealyMachineLearner, or TransducerLearner  and define the
-methods membership\_query and equivalence\_query. For more details regarding
+classes, either `MealyMachineLearner`, or `TransducerLearner`  and define the
+methods membership\_query and `equivalence\_query`. For more details regarding
 the logic of these methods consult the paper.
 
 The examples/ directory contains a number of practical examples on how to use
