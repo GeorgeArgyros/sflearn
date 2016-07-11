@@ -39,10 +39,23 @@ library.
 
 The `examples/` directory contains a number of practical examples on how to use
 these functions to construct models of various kinds of string manipulating
-programs.
+programs. The examples include:
 
-**Note:** To avoid assumptions on the location of the library on the system,
-the example code in the `examples/` directory utilizes an intermidiate
+* _html\_encoder.py_: Learns a model of the HTML encoder from the python cgi module.
+* _basic\_lookahead.py_: Debugging program for lookahead transducers, learns a simple transducer defined in the file.
+* _replacecomments.py_: Learns the ReplaceComments() de-obfuscation function used to remove SQL style `/* ... */` comments from strings. 
+* _htmlspecialchars.py_: Learns 
+
+To run an example
+
+    cd examples/ 
+    python replacecomments.py --bek
+
+The `--bek` option will also generate a BEK program from the infered transducer. To see all options run with `-h`.
+
+
+**Note:** To avoid assumptions on whether the library is installed when running the examples,
+the code in the `examples/` directory utilizes an intermidiate
 `context.py` file to import the library. If the library is installed in the
 system then this call can be replaced with a normal import of the library.
 
