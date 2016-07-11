@@ -14,19 +14,18 @@ user input.
 
 For more details, see the paper:
 
-**Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**
-_George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
+**Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**  
+_George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_  
+37th IEEE Symposium on Security and Privacy, 2016.
 
-
-## Requirements
-
-There are no external dependencies.
 
 ## Installation
 
 To install the library run
 
-`python setup.py install`
+    git clone https://github.com/GeorgeArgyros/sflearn  
+    cd sflearn  
+    python setup.py install
 
 ## Usage
 
@@ -35,20 +34,18 @@ classes, either `MealyMachineLearner`, or `TransducerLearner`  and define the
 methods `membership_query` and `equivalence_query`. For more details regarding
 the logic of these methods consult the paper.
 
-Conversion to BEK programs is performed by using the BekProgram class of the
+Conversion to BEK programs is performed by using the `BekProgram` class of the
 library.
 
 The `examples/` directory contains a number of practical examples on how to use
 these functions to construct models of various kinds of string manipulating
 programs.
 
-**Note:** To avoid assumptions on the location of the library on the system
+**Note:** To avoid assumptions on the location of the library on the system,
 the example code in the `examples/` directory utilizes an intermidiate
 `context.py` file to import the library. If the library is installed in the
 system then this call can be replaced with a normal import of the library.
 
 ## Authors
 
-The implementation of this library was designed and developed by George Argyros
-and is based on the algorithms developed by George Argyros, Ioannis Stais,
-Angelos D. Keromytis and Aggelos Kiayias.
+This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias.
