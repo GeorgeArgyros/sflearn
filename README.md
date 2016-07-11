@@ -14,8 +14,7 @@ user input.
 
 For more details, see the paper:
 
-**Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**
-
+**Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**  
 _George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
 
 
@@ -31,10 +30,10 @@ There are no external dependencies.
 
 In order to use this library one should inherit one of the learning algorithm
 classes, either `MealyMachineLearner`, or `TransducerLearner`  and define the
-methods membership\_query and `equivalence\_query`. For more details regarding
+methods `membership_query` and `equivalence_query`. For more details regarding
 the logic of these methods consult the paper.
 
-The examples/ directory contains a number of practical examples on how to use
+The `examples/` directory contains a number of practical examples on how to use
 these functions to construct models of various kinds of string manipulating
 programs.
 
