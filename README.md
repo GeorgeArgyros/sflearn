@@ -43,7 +43,7 @@ programs. The examples include:
 * _html\_encoder.py_: Learns a model of the HTML encoder from the python cgi module.
 * _basic\_lookahead.py_: Debugging program for lookahead transducers, learns a simple transducer defined in the file.
 * _replacecomments.py_: Learns the ReplaceComments() de-obfuscation function used to remove SQL style `/* ... */` comments from strings. 
-* _htmlspecialchars.py_: Learns 
+* _htmlspecialchars.py_: Learns the htmlspecialchars() PHP function with the double_ecode option disabled.
 
 To run an example
 
