@@ -43,7 +43,7 @@ The `examples/` directory contains a number of practical examples on how to use
 these functions to construct models of various kinds of string manipulating
 programs.
 
-**Note:** To avoid assumptions on the location of the library on the system
+**Note:** To avoid assumptions on the location of the library on the system,
 the example code in the `examples/` directory utilizes an intermidiate
 `context.py` file to import the library. If the library is installed in the
 system then this call can be replaced with a normal import of the library.
