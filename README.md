@@ -42,8 +42,8 @@ programs. The examples include:
 
 * _html\_encoder.py_: Learns a model of the HTML encoder from the python cgi module.
 * _basic\_lookahead.py_: Debugging program for lookahead transducers, learns a simple transducer defined in the file.
+* _htmlspecialchars.py_: Learns the htmlspecialchars() PHP function with the double_ecode option disabled.
 * _replacecomments.py_: Learns the ReplaceComments() de-obfuscation function used to remove SQL style `/* ... */` comments from strings. 
-* _htmlspecialchars.py_: Learns 
 
 To run an example
 
@@ -60,4 +60,4 @@ system then this call can be replaced with a normal import of the library.
 
 ## Authors
 
-This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias.
+This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais and Aggelos Kiayias.
