@@ -15,7 +15,8 @@ user input.
 For more details, see the paper:
 
 **Back in Black: Towards Formal, Black-Box Analysis of Sanitizers and Filters**  
-_George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
+_George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_  
+37th IEEE Symposium on Security and Privacy, 2016.
 
 
 ## Requirements
