@@ -19,14 +19,12 @@ _George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
 37th IEEE Symposium on Security and Privacy, 2016.
 
 
-## Requirements
-
-There are no external dependencies.
-
 ## Installation
 
 To install the library run
 
+`git clone https://github.com/GeorgeArgyros/sflearn`
+`cd sflearn`
 `python setup.py install`
 
 ## Usage
