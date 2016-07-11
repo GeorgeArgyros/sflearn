@@ -334,7 +334,7 @@ class TransducerLearner(object):
         # Process lookaheads
         self._check_lookahead(ce)
 
-        #Finding longest prefix among strings in S_m
+        #Finding longest prefix among strings in access_strings
         maxlen = 0
         for row in self.ot.access_strings:
             if not row:
@@ -345,7 +345,7 @@ class TransducerLearner(object):
             if len(prefix) > maxlen:
                 maxlen = len(prefix)
 
-        # Add the all the suffixes as experiments in E_m
+        # Add the all the suffixes as experiments in distinguishing strings
         suff = ()
         for c in reversed(ce[maxlen:]):
             suff = (c,) + suff
