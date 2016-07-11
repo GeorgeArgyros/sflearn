@@ -60,4 +60,4 @@ system then this call can be replaced with a normal import of the library.
 
 ## Authors
 
-This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias.
+This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais and Aggelos Kiayias.
