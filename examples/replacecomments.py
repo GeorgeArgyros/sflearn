@@ -91,7 +91,7 @@ class ReplaceCommentsLearner(TransducerLearner):
 
 
 def _create_argument_parser():
-    parser = argparse.ArgumentParser("")
+    parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--out", default="replacecomments", dest="outfile",
                         help="Filename to save the transducer")
     parser.add_argument("--bek", default=False, action="store_true", dest="save_bek",
@@ -110,14 +110,16 @@ def main():
     sanitizer = replace_comments_learner.learn_transducer()
     print 'OK'
 
-    print '[+] Saving in file {}.[txt|bek]: '.format(args.outfile),
+    print '[+] Saving transducer model in file {}.txt: '.format(args.outfile),
     sanitizer.save(args.outfile + '.txt')
+    print 'OK'
 
     if args.save_bek:
+        print '[+] Saving BEK program in file {}.bek: '.format(args.outfile),
         bek = BekProgram()
         bek.create_from_transducer(sanitizer)
         bek.save(args.outfile + '.bek')
-    print 'OK'
+        print 'OK'
 
 
 if __name__ == '__main__':

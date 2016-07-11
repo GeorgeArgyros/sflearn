@@ -121,13 +121,15 @@ def main():
     print '[+] Total number of equivalence queries: {}'.format(equiv)
     print '[+] Total number of cached membership queries: {}'.format(cache)
 
-    print '[+] Saving in file {}.[txt|bek]: '.format(args.outfile),
+    print '[+] Saving transducer model in file {}.txt: '.format(args.outfile),
     htmlspecialchars.save(args.outfile + '.txt')
+    print 'OK'
     if args.save_bek:
+        print '[+] Saving BEK program in file {}.bek'.format(args.outfile)
         bek = BekProgram()
         bek.create_from_transducer(htmlspecialchars)
         bek.save(args.outfile + '.bek')
-    print 'OK'
+        print 'OK'
 
 if __name__ == '__main__':
     main()

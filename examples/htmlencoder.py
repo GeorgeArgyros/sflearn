@@ -74,14 +74,16 @@ def main():
     sanitizer = enc_learn.learn_mealy_machine()
     print 'OK'
 
-    print '[+] Saving in file {}.[txt|bek]: '.format(args.outfile),
+    print '[+] Saving transducer model in file {}.txt: '.format(args.outfile),
     sanitizer.save(args.outfile + '.txt')
+    print 'OK'
+
     if args.save_bek:
+        print '[+] Saving BEK program in file {}.bek: '.format(args.outfile),
         bek = BekProgram()
         bek.create_from_transducer(sanitizer)
         bek.save(args.outfile + '.bek')
-    print 'OK'
-
+        print 'OK'
 
 if __name__ == '__main__':
     main()
