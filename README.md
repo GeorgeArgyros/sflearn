@@ -23,8 +23,8 @@ _George Argyros, Ioannis Stais, Angelos D. Keromytis and Aggelos Kiayias_
 
 To install the library run
 
-`git clone https://github.com/GeorgeArgyros/sflearn`
-`cd sflearn`
+`git clone https://github.com/GeorgeArgyros/sflearn`  
+`cd sflearn`  
 `python setup.py install`
 
 ## Usage
