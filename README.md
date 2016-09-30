@@ -8,7 +8,7 @@ represent programs such as string sanitizers. The library also contains a class
 to convert the infered models into BEK programs (see the [BEK
 tutorial](www.rise4fun.com/Bek/tutorial)).
 
-The primary target of these algorithms are the inference of string manipulating
+The primary target of these algorithms is the inference of string manipulating
 programs such as HTML encoders used to sanitize untrusted user input.
 
 For more details, see the paper:
@@ -31,7 +31,7 @@ To install the library run
 In order to use this library one should inherit one of the learning algorithm
 classes, either `MealyMachineLearner`, or `TransducerLearner`  and define the
 methods `membership_query` and `equivalence_query`. For more details regarding
-the logic of these methods consult the paper.
+the inner workings of these methods consult the paper.
 
 Conversion to BEK programs is performed by using the `BekProgram` class of the
 library.
@@ -60,4 +60,4 @@ system then this call can be replaced with a normal import of the library.
 
 ## Authors
 
-This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais and Aggelos Kiayias.
+This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais, Aggelos Kiayias under the supervision of Angelos Keromytis.
