@@ -61,3 +61,8 @@ system then this call can be replaced with a normal import of the library.
 ## Authors
 
 This library was designed and developed by George Argyros and is based on the algorithms developed by George Argyros, Ioannis Stais, Aggelos Kiayias under the supervision of Angelos Keromytis.
+
+## Acknowledgements
+
+This research was partly supported by ERC project CODAMODA, #259152.
+
